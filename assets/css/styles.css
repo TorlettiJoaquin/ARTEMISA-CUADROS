@@ -383,7 +383,7 @@ of the website, in dark theme
     padding: 1rem 1.75rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
-    transition: .3seg;
+    transition: .3s;
 }
 
 .button:hover{
@@ -421,6 +421,8 @@ of the website, in dark theme
 .about__img{
     width: 500px;
     justify-self: center;
+    border-radius: 50%;
+    background-color: var(--first-color);
 }
 
 .about__title{
@@ -920,6 +922,29 @@ of the website, in dark theme
     }
 }
 
-@media screen and (max-width: 320px)
+@media screen and (min-width: 767px){
+    body {
+        margin: 0;
+    }
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 3rem;
+    }
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+    .nav__list{
+        flex-direction: row;
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .nav__menu{
+        margin-left: auto;
+    }
+    .nav__item{
+        text-align: center;
+    }
+}
 
 /* For large devices */
