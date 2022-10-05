@@ -154,6 +154,10 @@ of the website, in dark theme
     box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, .3);
 }
 
+.dark-theme .home__img{
+    background-color: var(--first-color);
+}
+
 
 /*============== REUSABLE CSS CLASSES ==============*/
 .section {
@@ -315,6 +319,7 @@ of the website, in dark theme
 .home__img{
     /* width: 200px; */
     justify-self: center;
+    border-radius: 5%;
 }
 
 .home__title{
