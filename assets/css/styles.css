@@ -158,6 +158,10 @@ of the website, in dark theme
     background-color: var(--first-color);
 }
 
+.dark-theme .about__img{
+    background-color: var(--first-color);
+}
+
 
 /*============== REUSABLE CSS CLASSES ==============*/
 .section {
@@ -422,7 +426,6 @@ of the website, in dark theme
     width: 500px;
     justify-self: center;
     border-radius: 50%;
-    background-color: var(--first-color);
 }
 
 .about__title{
