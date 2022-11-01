@@ -29,6 +29,12 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*===================== REMOVE MENU CLICKING OUTSIDE =====================*/
+function navOutside(){
+    const navMenu = document.getElementById('main*')
+    navMenu.classList.remove('show-menu')
+}
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
     const header = document.getElementById('header')

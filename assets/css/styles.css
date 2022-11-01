@@ -928,6 +928,7 @@ of the website, in dark theme
 @media screen and (min-width: 767px){
     body {
         margin: 0;
+        margin-top: var(--header-height);
     }
     .nav{
         height: calc(var(--header-height) + 1.5rem);
@@ -941,6 +942,7 @@ of the website, in dark theme
         flex-direction: row;
         column-gap: 1rem;
         align-items: center;
+        font-size: var(--small-font-size);
     }
     .nav__menu{
         margin-left: auto;
@@ -948,6 +950,101 @@ of the website, in dark theme
     .nav__item{
         text-align: center;
     }
+
+    .home__container,
+    .about__container,
+    .questions__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__container{
+        align-items: center;
+    }
+
+    .home{
+        padding: 10rem 0 5rem;
+    }
+    .home__img{
+        width: 300px;
+        order: 1;
+    }
+    .home__social{
+        top: 22%;
+        right: -1.75rem;
+    }
+
+    .questions__container{
+        align-items: flex-start;
+    }
+
+    .footer__container{
+        column-gap: 3rem;
+    }
+
+    .footer__subscribe{
+        width: initial;
+    }
 }
 
 /* For large devices */
+@media screen and (min-width: 992px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section{
+        padding: 8rem 0 1rem;
+    }
+    .section__title,
+    .section__title-center{
+        font-size: var(--h1-font-size);
+    }
+
+    .home{
+        padding: 13rem 0 5rem;
+    }
+    .home__img{
+        width: 350px;
+    }
+    .home__description{
+        padding-right: 7rem;
+    }
+
+    .about__img{
+        width: 380px;
+    }
+    .steps__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .steps__bg{
+        padding: 3.5rem 2.5rem;
+    }
+    .steps__card-title{
+        font-size: var(--normal-font-size);
+    }
+    
+    .product__description{
+        padding: 0 16rem;
+    }
+    .product__container{
+        padding: 4rem 0;
+        grid-template-columns: repeat(3, 185px);
+        gap: 4rem 6rem;
+    }
+    .product__img{
+        width: 160px;
+    }
+    .product__title,
+    .product__price{
+        font-size: var(--normal-font-size);
+    }
+
+    .questions__container{
+        padding: 1rem 0 4rem;
+    }
+    .questions__title{
+        text-align: initial;
+    }
+}
